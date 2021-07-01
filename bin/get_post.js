@@ -8,6 +8,7 @@ var TOKEN_URL = 'https://osu.ppy.sh/oauth/token';
 function get_token() {
 	fetch("https://osu.ppy.sh/oauth/token", {
     method: 'post',
+mode:'no-cors',
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
